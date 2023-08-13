@@ -1,4 +1,5 @@
 import About from "@/components/About/About";
+import Contact from "@/components/Contact";
 import LandingPage from "@/components/LandingPage";
 import SliderText from "@/components/LandingPage/SliderText";
 import Parallax from "@/components/Parallax";
@@ -10,8 +11,10 @@ export default function Home() {
       <LandingPage />
       <SliderText />
       <Parallax />
-      <About /> 
-      {/* <Projects /> */} 
+      <About />  
+      <Projects />
+      <Contact/> 
+    
     </main>
   );
 }

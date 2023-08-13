@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../app/ui/button'
+import { Button } from '../ui/button'
 import HandLine from '../Svgs/HandLine'
 
 const BTN = () => {

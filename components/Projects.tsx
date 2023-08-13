@@ -1,15 +1,23 @@
 import React from "react";
 import Arrow from "./Svgs/Arrow";
 import Mockup from "./Mockup";
+import Double from "./Double";
+import { Data } from "@/constants";
 
 const Projects = () => {
   return (
-    <section>
+    <section className="container">
       <div className="-space-y-5 flex flex-col items-center justify-center md:justify-start md:items-start">
-        <h1 className="text-5xl md:text-6xl lg:text-9xl uppercase  font-extrabold">Projects</h1>
+        <h1 className="text-5xl md:text-6xl lg:text-9xl uppercase  font-extrabold">
+          Projects
+        </h1>
         <Arrow />
       </div>
-      {/* <Mockup /> */}
+      <section className="gallery">
+        <Double project={[Data[0],Data[1]]} />
+        <Double project={[Data[2],Data[3]]} />
+      
+      </section>
     </section>
   );
 };

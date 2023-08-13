@@ -3,10 +3,11 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import { Toaster } from "@/components/ui/toaster";
 
 const poppins = Poppins({
   subsets: ["latin", "devanagari", "latin-ext"],
-  weight: ["400", "600","500", "700", "800", "900"],
+  weight: ['300',"400", "600","500", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({
       >
         <NavBar />
         {children}
+        <Toaster/>
       </body>
     </html>
   );
