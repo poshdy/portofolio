@@ -25,8 +25,8 @@ export const Data= [
     title: "Netflix clone",
     desc: "netflix clone is fullstack application comes with full crud opearations and complete authentication system with SSO using Supabase.",
     tech: ["Next", "React", "Typescript", "Supabase",'Tailwind'],
-    github: "",
-    site: "",
+    github: "https://github.com/poshdy/netflixclone",
+    site: "https://netflixclone-rho-lac.vercel.app/",
     src: Netflix
   },
   {
@@ -34,8 +34,8 @@ export const Data= [
     title: "Spotify clone",
     desc: "Spotify clone is fullstack application you can Discover & Listen all trending songs and adding them in your Favorites list and store in Firebase firestore.",
     tech: [ "React", "Javascript", 'Redux toolkit',"Firebase",'Tailwind'],
-    github: "",
-    site: "",
+    github: "https://github.com/poshdy/Tempom",
+    site: "https://tempo-mauve.vercel.app/",
     src: Spotify
   },
   {
@@ -43,8 +43,8 @@ export const Data= [
     title: "Crytos",
     desc: "All-in-one cryptocurrency tracking app. View the latest prices, get all currency stats, coin data visualization and read the latest crypto news.",
     tech: [ "Next", "Typescript", 'React','shdcn ui'],
-    github: "",
-    site: "",
+    github: "https://github.com/poshdy/cryptos",
+    site: "https://cryptos-seven.vercel.app/",
     src: Cryptos
   },
   {
@@ -52,8 +52,8 @@ export const Data= [
     title: "Sniper Sneaker",
     desc: "Sniper Sneaker is Sneakers Ecommerce website built with React and Sanity with full shopping cart functionality",
     tech: [ "React", "Javascript", 'Redux toolkit','Sanity.io','React query','Tailwind'],
-    github: "",
-    site: "",
+    github: "https://github.com/poshdy/SniperSneaker-sanity-ecom/tree/master/snipersneaker",
+    site: "https://snipersneaker.vercel.app/",
     src: SS
   },
   {

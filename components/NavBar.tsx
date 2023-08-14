@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Links from "./Links";
 import { AnimatePresence } from "framer-motion";
 import Circle from "./Svgs/Circle";
+import Link from "next/link";
 
 const NavBar = () => {
   const [Active, setActive] = useState(false);
@@ -20,24 +21,22 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={`sticky top-1 z-50 pt-3`}>
+    <header className={`sticky top-0 z-50 pt-3 `}>
       <nav
-        className={`hidden md:flex items-center leading-tight tracking-tighter font-bold text-secondary space-x-9 text-base justify-center duration-300 ease-in-out p-2 ${
-          scroll ? "border-2 border-white" : "border-none"
-        }`}
+        className={`hidden md:flex items-center leading-tight tracking-tighter font-bold text-secondary space-x-9 text-base justify-center duration-300 ease-in-out p-2 ${scroll && 'border-2 border-fuchsia-100'}`}
       >
         <>
-          <p>Home</p>
-          <p>About</p>
+          <Link href='/'>Home</Link>
+          <Link href='#about'>About</Link>
         </>
         <h1 className="text-2xl  text-desturvtive2 md:text-4xl">Posh.dev</h1>
         <>
-          <p>Projects</p>
+          <Link href='#projects'>Projects</Link>
 
-          <p className="relative">
+          <Link href='#contact' className="relative">
             <Circle />
             Contact
-          </p>
+          </Link>
         </>
       </nav>
       <nav className="flex items-center justify-between px-2 md:hidden">

@@ -18,7 +18,7 @@ const About = () => {
 
 const height = useTransform(scrollYProgress,[0,1],[90,0])
   return (
-    <section ref={containerRef} className="bg-[#101010] w-full  space-y-20 px-3 lg:px-5 py-10">
+    <section id="about" ref={containerRef} className="bg-[#101010] w-full  space-y-20 px-3 lg:px-5 py-10">
       <div className="py-8 w-[80%] px-4 mt-5 container flex flex-col lg:items-start lg:justify-start border-b-2 border-b-secondary/40">
         <h1 className="text-3xl md:text-6xl flex tracking-tighter leading-tight font-bold relative">
           <Highlight />

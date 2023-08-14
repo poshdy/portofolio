@@ -2,6 +2,7 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image, { StaticImageData } from "next/image";
 import React, { useRef } from "react";
+import { FaGithub, FaLink } from "react-icons/fa";
 
 interface Iprop {
   site: string;
@@ -63,6 +64,14 @@ const Double = ({ project }: { project: Iprop[] }) => {
               <p className=" text-destructive ">{tech}</p>
             ))}
           </div>
+          <div className="flex gap-2">
+            <a href={project[0].github} target="_blank">
+              <FaGithub />
+            </a>
+            <a href={project[0].site} target="_blank">
+              <FaLink />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -85,6 +94,14 @@ const Double = ({ project }: { project: Iprop[] }) => {
             {project[1].tech?.map((tech) => (
               <p className=" text-destructive ">{tech}</p>
             ))}
+          </div>
+          <div className="flex gap-2">
+            <a href={project[1].github} target="_blank">
+              <FaGithub />
+            </a>
+            <a href={project[1].site} target="_blank">
+              <FaLink />
+            </a>
           </div>
         </div>
       </div>
