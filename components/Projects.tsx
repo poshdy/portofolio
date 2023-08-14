@@ -15,7 +15,6 @@ const Projects = () => {
         </h1>
         <Arrow />
       </div>
-      {/* <Mockup /> */}
       <section className="gallery">
         <Double project={[Data[0], Data[1]]} />
         <Double project={[Data[2], Data[3]]} />
