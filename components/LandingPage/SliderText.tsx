@@ -23,7 +23,7 @@ const SliderText = () => {
       },
       x: "-=300px",
     });
-  }, [Direction]);
+  }, []);
 
   const animation = () => {
     if (XPercent <= -100) {
