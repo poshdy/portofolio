@@ -28,8 +28,8 @@ const Project = ({ desc, id, github, src, tech, site, title }: Iprop) => {
           </h2>
         </Reveal>
         <div className="flex flex-wrap gap-2">
-          {tech.map((t) => (
-            <Reveal>
+          {tech.map((t,i) => (
+            <Reveal key={i}>
               <p className="text-desturvtive2 text-sm ">{t}</p>
             </Reveal>
           ))}

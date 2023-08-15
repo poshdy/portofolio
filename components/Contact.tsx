@@ -47,6 +47,7 @@ const Contact = () => {
     setName("");
     setMessage("");
   };
+  const text = "Let's"
   return (
     <section
       id="contact"
@@ -54,7 +55,7 @@ const Contact = () => {
     >
       <div className="flex flex-col items-start italic  tracking-tighter leading-tight">
         <Reveal>
-          <h3 className="text-5xl md:text-7xl lg:text-9xl">Let's</h3>
+          <h3 className="text-5xl md:text-7xl lg:text-9xl">{text}</h3>
         </Reveal>
         <Reveal>
           <h3 className=" text-5xl md:text-7xl lg:text-9xl pl-10">Get in</h3>
