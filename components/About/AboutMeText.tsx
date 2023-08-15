@@ -2,6 +2,7 @@ import React from "react";
 import IconMagnecticWrapper from "../IconMagneticWrapper";
 const text= "I'm"
 const AboutMeText = () => {
+  const text2 = "Let's"
   return (
     <div className="flex flex-col items-center justify-center gap-3 lg:items-start lg:justify-start w-full lg:w-[30%] py-2 lg:py-4">
       <p className="text-secondary text-xs lg:text-sm  text-center lg:text-left   ">
@@ -28,7 +29,7 @@ const AboutMeText = () => {
       </p>
       <IconMagnecticWrapper>
       <p className="px-4 cursor-pointer py-2 w-fit text-white transition-all font-bold rounded-none duration-300 ease-in-out hover:shadow-none shadow-[4px_4px_white] bg-[#1BCF90] ">
-        Let's Work Together
+        {text2} Work Together
       </p>
       </IconMagnecticWrapper>
     </div>
