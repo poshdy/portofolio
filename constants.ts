@@ -10,15 +10,7 @@ export const NavLinks = [
   { id: "projects", title: "Projects" },
   { id: "contact", title: "Contact" },
 ];
-interface Iprop {
-  id: string;
-  title: string;
-  desc: string;
-  tech: string[];
-  github:string;
-  site: string;
-  src:  StaticImageData;
-}
+
 
 export const Data = [
   {

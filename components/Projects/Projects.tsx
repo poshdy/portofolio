@@ -4,7 +4,16 @@ import Mockup from "./Mockup";
 import Project from "./Project";
 import { Data } from "@/constants";
 import Arrow from "../Svgs/Arrow";
-
+import { StaticImageData } from "next/image";
+interface Iprop {
+  id: string,
+  title: string,
+  desc: string,
+  tech: (string | undefined)[],
+  github:string,
+  site: string,
+  src:  StaticImageData,
+}
 const Projects = () => {
   return (
     <section id="projects" className="container my-4">
@@ -13,7 +22,7 @@ const Projects = () => {
         <Arrow />
       </h1>
       <div className="flex flex-col items-center justify-center md:flex-row md:flex-wrap gap-2 w-full">
-        {Data.map((project) => (
+        {Data.map((project:Iprop) => (
           <Project key={project.id} {...project} />
         ))}
       </div>

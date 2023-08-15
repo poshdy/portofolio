@@ -5,13 +5,13 @@ import { FaGithub, FaLink } from "react-icons/fa";
 import IconMagnecticWrapper from "../IconMagneticWrapper";
 import Reveal from "../Reveal";
 interface Iprop {
-  id: string;
-  title: string;
-  desc: string;
-  tech: string[];
-  github: string;
-  site: string;
-  src: StaticImageData;
+  id: string,
+  title: string,
+  desc: string,
+  tech: (string | undefined)[],
+  github:string,
+  site: string,
+  src:  StaticImageData,
 }
 const Project = ({ desc, id, github, src, tech, site, title }: Iprop) => {
   return (
