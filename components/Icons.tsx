@@ -4,7 +4,7 @@ const Icons = ({ height }: { height: string }) => {
   return (
     <div className="flex items-center gap-4">
       <IconMagnecticWrapper>
-        <a href="https://www.linkedin.com" target="_blank">
+        <a href="https://www.linkedin.com/in/roshdy-developer/" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height={height}

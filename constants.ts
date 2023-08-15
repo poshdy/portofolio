@@ -70,8 +70,8 @@ export const Data = [
     title: "ABCITY",
     desc: "Abcity is fitness agency landing page also there is Bmi & Daily calorie calculators",
     tech: ["React", "Javascript", , "Tailwind", "React query"],
-    github: "",
-    site: "",
+    github: "https://github.com/poshdy/ABCITY/tree/master/gbro",
+    site: "https://abcity.vercel.app/",
     src: Abcity,
   },
 ];
