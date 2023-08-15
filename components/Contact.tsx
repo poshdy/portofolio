@@ -7,6 +7,7 @@ import { Textarea } from "./ui/textarea";
 import { useToast } from "./ui/use-toast";
 import emailjs from "@emailjs/browser";
 import { Button } from "./ui/button";
+import Reveal from "./Reveal";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -47,12 +48,21 @@ const Contact = () => {
     setMessage("");
   };
   return (
-    <section id="contact" className="container flex flex-col lg:flex-row  items-center lg:justify-around h-screen">
+    <section
+      id="contact"
+      className="container flex flex-col lg:flex-row  items-center justify-center lg:justify-around h-screen my-4 space-y-5"
+    >
       <div className="flex flex-col items-start italic  tracking-tighter leading-tight">
-        <h3 className="text-5xl md:text-7xl lg:text-9xl">Let's</h3>
-        <h3 className=" text-5xl md:text-7xl lg:text-9xl pl-10">Get in</h3>
-        <h3 className="text-5xl md:text-7xl lg:text-9xl">Touch</h3>
-        <Icons />
+        <Reveal>
+          <h3 className="text-5xl md:text-7xl lg:text-9xl">Let's</h3>
+        </Reveal>
+        <Reveal>
+          <h3 className=" text-5xl md:text-7xl lg:text-9xl pl-10">Get in</h3>
+        </Reveal>
+        <Reveal>
+          <h3 className="text-5xl md:text-7xl lg:text-9xl">Touch</h3>
+        </Reveal>
+        <Icons height="25px" />
       </div>
 
       <form

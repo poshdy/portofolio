@@ -14,7 +14,7 @@ const Reveal = ({ children }: { children: React.ReactNode }) => {
   });
   return (
     <div ref={bodyRef}>
-      <div className="overflow-hidden">
+      <div className="p-1  overflow-y-hidden">
         <motion.div
           variants={animate}
           initial="start"

@@ -1,13 +1,13 @@
 import IconMagnecticWrapper from "./IconMagneticWrapper";
 
-const Icons = () => {
+const Icons = ({ height }: { height: string }) => {
   return (
     <div className="flex items-center gap-4">
       <IconMagnecticWrapper>
         <a href="https://www.linkedin.com" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="2em"
+            height={height}
             fill="#fff"
             viewBox="0 0 448 512"
           >
@@ -19,7 +19,7 @@ const Icons = () => {
         <a href="https://github.com/poshdy" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="2em"
+            height={height}
             viewBox="0 0 496 512"
             fill="#fff"
           >
@@ -32,7 +32,7 @@ const Icons = () => {
           <svg
             href="www.instagram.com/codewithposh/"
             xmlns="http://www.w3.org/2000/svg"
-            height="2em"
+            height={height}
             viewBox="0 0 448 512"
             fill="#fff"
           >

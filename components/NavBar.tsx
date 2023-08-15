@@ -47,10 +47,7 @@ const NavBar = () => {
           onClick={() => setActive(!Active)}
           className="fixed right-0 rounded-full w-12 h-12 cursor-pointer z-30 bg-destructive flex items-center justify-center"
         >
-          <div className={`w-full flex items-center relative gap-1  flex-col`}>
-            <span className={` absolute w-[40%] h-[1px] top-[-5px] bg-white ${Active && 'top-[-1px] rotate-[-45deg]'}`}></span>
-            <span className={` absolute w-[40%] h-[1px] top-[5px] bg-white ${Active && 'top-[1px] rotate-[45deg]'} `}></span>
-          </div>
+        <div className={`burger ${Active ? 'burgerActive' : ""}`}></div>
         </div>
       </nav>
       <AnimatePresence mode="wait">{Active && <Links />}</AnimatePresence>

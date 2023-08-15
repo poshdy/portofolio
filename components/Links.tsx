@@ -43,11 +43,11 @@ const Links = () => {
       initial="initial"
       animate="enter"
       exit="exit"
-      className="w-[50%] h-[100vh] fixed z-20 top-0 right-0 bg-background/80"
+      className="w-[50%] h-[100vh] fixed z-20 top-0 right-0 bg-black"
     >
       <div
         onMouseLeave={() => setSelecteId(pathname)}
-        className="flex text-3xl font-bold gap-3 flex-col items-center justify-between w-full h-full p-24"
+        className="flex font-bold  gap-3 flex-col items-center justify-between w-full h-[80%]  p-24"
       >
         {NavLinks.map((link) => (
           <motion.div
@@ -55,12 +55,16 @@ const Links = () => {
             initial="initial"
             animate="enter"
             exit={"exit"}
+           className="-space-y-5"
           >
-            <p>{link.title}</p>
+            <p className="text-3xl">{link.title}</p>
           </motion.div>
         ))}
+        <div className="flex w-full flex-col gap-3 justify-center items-center">
+          <h3 className="text-sm font-bold text-secondary">Social Links</h3>
+        <Icons height='20px' />
+        </div>
       </div>
-      <Icons/>
     </motion.div>
   );
 };

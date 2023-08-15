@@ -34,7 +34,7 @@ const SliderText = () => {
     }
     gsap.set(Text1Ref.current, { xPercent: XPercent });
     gsap.set(Text2Ref.current, { xPercent: XPercent });
-    XPercent += 0.1 * Direction;
+    XPercent += 0.01 * Direction;
     requestAnimationFrame(animation);
   };
 

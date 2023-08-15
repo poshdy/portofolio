@@ -72,7 +72,7 @@ const Parallax = () => {
 
   return (
     <section className="w-full">
-      {/* <div className="bg-white h-[60vh]"></div> */}
+   
       <div ref={container} className="h-[175vh] relative box-border bg-black flex overflow-hidden gap-[2vw] p-[2vw]">
         <Column  y={y} images={[IMGS[5], IMGS[1], IMGS[2]]} />
         <Column  y={y2} images={[IMGS[3], IMGS[0], IMGS[4]]} />

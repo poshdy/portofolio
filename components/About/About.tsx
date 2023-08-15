@@ -1,24 +1,19 @@
-'use client'
-import React,{useRef} from "react";
+"use client";
+import React, { useRef } from "react";
 import Me from "@/public/IMG-1287.jpg";
 import Image from "next/image";
 import Highlight from "../Svgs/Highlight";
 import AboutMeText from "./AboutMeText";
 import Services from "./Services";
 import Tech from "./Tech";
-import {motion , useTransform , useScroll} from 'framer-motion'
-
+import { motion, useTransform, useScroll } from "framer-motion";
 
 const About = () => {
-  const containerRef = useRef(null)
-  const {scrollYProgress} = useScroll({
-    target:containerRef,
-    offset:['start end','end start' ]
-})
-
-const height = useTransform(scrollYProgress,[0,1],[90,0])
   return (
-    <section id="about" ref={containerRef} className="bg-[#101010] w-full  space-y-20 px-3 lg:px-5 py-10">
+    <section
+      id="about"
+      className="bg-[#0e0e0e] w-full  space-y-20 px-3 lg:px-5 py-10"
+    >
       <div className="py-8 w-[80%] px-4 mt-5 container flex flex-col lg:items-start lg:justify-start border-b-2 border-b-secondary/40">
         <h1 className="text-3xl md:text-6xl flex tracking-tighter leading-tight font-bold relative">
           <Highlight />
@@ -45,11 +40,6 @@ const height = useTransform(scrollYProgress,[0,1],[90,0])
       </div>
       <Services />
       <Tech />
-   
-     <motion.div style={{height}} className="relative mt-[100px] w-[200%]">
-    <div className="w-[220%] h-[1550%] absolute shadow-2xl rounded-b-full left-[-10%]"></div>
-  </motion.div>
- 
     </section>
   );
 };

@@ -3,7 +3,7 @@ import Spark from "../Svgs/Spark";
 import Pattern from "../Svgs/Pattern";
 import Reveal from "../Reveal";
 
-const LpMe = () => {
+const LandingpageTexts = () => {
   return (
     <div className="flex flex-col items-center lg:items-start gap-5">
       <Reveal>
@@ -33,6 +33,6 @@ const LpMe = () => {
   );
 };
 
-export default LpMe;
+export default LandingpageTexts;
 {
 }
