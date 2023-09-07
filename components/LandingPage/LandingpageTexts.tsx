@@ -16,7 +16,7 @@ const LandingpageTexts = () => {
           <Spark />
         </div>
         <Reveal>
-          <h1 className=" relative  ">FRONTEND</h1>
+          <h1 className=" relative ">FRONTEND</h1>
         </Reveal>
         <Reveal>
           <h1 className=" text-destructive">Developer</h1>
@@ -26,7 +26,7 @@ const LandingpageTexts = () => {
       <Reveal>
         <p className="text-sm md:text-lg max-w-[500px] text-center lg:text-start font-bold">
           A self-taught FRONT-END developer with MASSIVE experience in building
-          High scalable web Pages and also i’m Gym rat
+          High scalable web Pages
         </p>
       </Reveal>
     </div>
