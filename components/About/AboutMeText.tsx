@@ -5,7 +5,7 @@ const AboutMeText = () => {
   const text2 = "Let's"
   return (
     <div className="flex flex-col items-center justify-center gap-3 lg:items-start lg:justify-start w-full lg:w-[30%] py-2 lg:py-4">
-      <p className="text-secondary text-xs lg:text-sm  text-center lg:text-left   ">
+      <p className="text-secondary text-base lg:text-lg  text-center lg:text-left   ">
         Hey 👋 My name is Roshdy and {text} a self-taught Front-end developer with
         1 year of experience in all recent front-end development technologies
         such as: HTML CSS Javascript Typescript And frameworks like: React NEXT

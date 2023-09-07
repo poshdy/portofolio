@@ -18,10 +18,10 @@ const NavBar = () => {
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [scroll]);
 
   return (
-    <header className={`sticky top-0 z-50 pt-3 `}>
+    <header className={`sticky top-0 z-50 pt-3 ${scroll && 'bg-white bg-opacity-20 backdrop-blur-sm drop-shadow-lg'} `}>
       <nav
         className={`hidden md:flex items-center leading-tight tracking-tighter font-bold text-secondary space-x-9 text-base justify-center duration-300 ease-in-out p-2 ${scroll && 'border-2 border-fuchsia-100'}`}
       >

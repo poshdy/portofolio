@@ -15,11 +15,8 @@ const Contact = () => {
   const [email, setEmail] = useState<string | null>("");
   const [name, setName] = useState<string | null>("");
   const [message, setMessage] = useState<string | null>("");
-  const [loading, setLoading] = useState<boolean>(false);
 
-  //
-  //
-  //
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (email && name && message) {
@@ -67,7 +64,7 @@ const Contact = () => {
       </div>
 
       <form
-        className="w-[50%] space-y-5 text-secondary font-light"
+        className="min-w-[50%] max-w-[80%] space-y-5 text-secondary font-light"
         onSubmit={handleSubmit}
       >
         <div className="">

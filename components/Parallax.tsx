@@ -72,14 +72,12 @@ const Parallax = () => {
 
   return (
     <section className="w-full">
-   
-      <div ref={container} className="h-[175vh] relative box-border bg-black flex overflow-hidden gap-[2vw] p-[2vw]">
+      <div ref={container} className="h-[175vh] w-full relative box-border bg-black flex overflow-hidden gap-[2vw] p-[2vw]">
         <Column  y={y} images={[IMGS[5], IMGS[1], IMGS[2]]} />
         <Column  y={y2} images={[IMGS[3], IMGS[0], IMGS[4]]} />
         <Column  y={y3} images={[IMGS[6], IMGS[7], IMGS[8]]} />
         <Column  y={y4} images={[IMGS[9], IMGS[10], IMGS[11]]} />
       </div>
-      {/* <div className="bg-white h-[60vh]"></div> */}
     </section>
   );
 };
@@ -88,10 +86,10 @@ export default Parallax;
 
 const Column = ({images,y=0}:{images:StaticImageData[],y:any}) => {
   return (
-    <motion.div style={{y}} className="w-[25%] h-full min-w-[250px] Targetchild relative flex flex-col gap-[2vw] ">
+    <motion.div style={{y}} className="w-[25%] h-full min-w-[100px] Targetchild relative flex flex-col gap-[2vw] ">
       {images.map((img, index) => (
         <div className="relative w-full h-full rounded-md overflow-hidden " key={index}>
-          <Image fill alt="img" src={img} className="object-cover opacity-75" />
+          <Image fill alt="img" src={img} className="object-cover opacity-75" sizes="(max-width-[200px])" />
         </div>
       ))}
     </motion.div>

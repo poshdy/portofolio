@@ -18,7 +18,7 @@ const Project = ({ desc, id, github, src, tech, site, title }: Iprop) => {
     <div className="w-full md:w-[40%] ">
       <div className="bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg flex justify-center items-center rounded-md pt-6">
         <div className="relative w-[90%] aspect-video rounded-t-md overflow-clip">
-          <Image src={src} alt="project" fill className="object-cover" />
+          <Image src={src} alt="project" fill className="object-cover" sizes="(max-width: 500px) 100vw" />
         </div>
       </div>
       <div className="flex flex-col items-start gap-2 py-2">

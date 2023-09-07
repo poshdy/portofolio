@@ -256,7 +256,7 @@ const Pattern = () => {
         width="50"
         height="50"
         stroke="#D49CFF"
-        stroke-opacity="0.4"
+        strokeOpacity="0.4"
       />
     </svg>
   );

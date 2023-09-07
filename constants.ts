@@ -3,7 +3,6 @@ import Cryptos from "@/public/Projects/Cryptos.png";
 import Spotify from "@/public/Projects/Spotify.png";
 import Abcity from "@/public/Projects/Abcity.png";
 import SS from "@/public/Projects/SS.png";
-import { StaticImageData } from "next/image";
 export const NavLinks = [
   { id: "home", title: "Home" },
   { id: "about", title: "About" },

@@ -16,7 +16,7 @@ const LandingpageTexts = () => {
           <Spark />
         </div>
         <Reveal>
-          <h1 className=" relative ">FRONTEND</h1>
+          <h1 className="relative">FRONTEND</h1>
         </Reveal>
         <Reveal>
           <h1 className=" text-destructive">Developer</h1>

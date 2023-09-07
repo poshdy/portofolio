@@ -18,19 +18,19 @@ const SERVICES = [
     no: "03",
     title: "BOTH",
     content:
-      "I can build your dream website from scratch using the most recent web technologies or transform a design from any design software to highly scalable code and make it Responsive on all devices",
+      "I specialize in designing and developing projects from the ground up, utilizing the latest technologies. I ensure high-quality service and ongoing support to guarantee your project's success. Let's collaborate to turn your vision into reality.",
   },
 ];
 const Services = () => {
-  const HEADING = "font-bold text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tighter";
+  const HEADING =
+    "font-bold text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tighter";
 
   return (
     <div className="container space-y-5">
       <h2 className={HEADING}>Services I offer</h2>
-
-      <div className="flex flex-col items-center justify-center gap-3 lg:flex-row ">
+      <div className="flex flex-col  justify-start gap-4 lg:flex-row">
         {SERVICES.map((service) => (
-          <div className="space-y-5" key={service.no}>
+          <div className="space-y-3 w-full lg:w-[33.33%]" key={service.no}>
             <Reveal>
               <span className="text-secondary border-b-2 border-b-secondary ">
                 {service.no}

@@ -43,9 +43,9 @@ const SliderText = () => {
       <div className="absolute top-[calc(100vh - 350px)] bg-white text-black ">
         <div
           ref={containerRef}
-          className="relative whitespace-nowrap uppercase font-bold text-9xl"
+          className="relative whitespace-nowrap uppercase font-bold text-5xl md:text-7xl lg:text-9xl"
         >
-          <p className="relative m-0  pr-9" ref={Text1Ref}>
+          <p className="relative m-0 pr-9" ref={Text1Ref}>
             Ui/UX-Development-Responsive Design-Clean Code
           </p>
           <p className="m-0 pr-9 absolute left-[100%] top-0" ref={Text2Ref}>
