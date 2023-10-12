@@ -6,8 +6,8 @@ import LandingpageTexts from "./LandingpageTexts";
 
 const LandingPage = () => {
   return (
-    <section className="flex container flex-col-reverse items-center gap-3 lg:flex-row  lg:justify-around pt-5">
-      <div className="flex flex-col items-center justify-center lg:justify-start lg:items-start">
+    <section className="flex container flex-col-reverse items-center  lg:flex-row lg:justify-around pt-5 my-20">
+      <div className="flex flex-col items-center justify-center gap-3 lg:justify-start lg:items-start">
         <LandingpageTexts />
         <BTN />
         <Icons height="25px" />

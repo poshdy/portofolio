@@ -10,7 +10,6 @@ export const NavLinks = [
   { id: "contact", title: "Contact" },
 ];
 
-
 export const Data = [
   {
     id: "1",
@@ -25,9 +24,9 @@ export const Data = [
     id: "2",
     title: "Spotify clone",
     desc: "Spotify clone is fullstack application you can Discover & Listen all trending songs and adding them in your Favorites list and store in Firebase firestore.",
-    tech: ["React", "Javascript", "Redux toolkit", "Firebase", "Tailwind"],
+    tech: ["React", "TypeScript", "Zustand", "Supabase", "Tailwind"],
     github: "https://github.com/poshdy/Tempom",
-    site: "https://tempo-mauve.vercel.app/",
+    site: "https://tempo-poshdy.vercel.app/",
     src: Spotify,
   },
   {
@@ -56,13 +55,13 @@ export const Data = [
     site: "https://snipersneaker.vercel.app/",
     src: SS,
   },
-  {
-    id: "5",
-    title: "ABCITY",
-    desc: "Abcity is fitness agency landing page also there is Bmi & Daily calorie calculators",
-    tech: ["React", "Javascript", , "Tailwind", "React query"],
-    github: "https://github.com/poshdy/ABCITY/tree/master/gbro",
-    site: "https://abcity.vercel.app/",
-    src: Abcity,
-  },
+  // {
+  //   id: "5",
+  //   title: "ABCITY",
+  //   desc: "Abcity is fitness agency landing page also there is Bmi & Daily calorie calculators",
+  //   tech: ["React", "Javascript", , "Tailwind", "React query"],
+  //   github: "https://github.com/poshdy/ABCITY/tree/master/gbro",
+  //   site: "https://abcity.vercel.app/",
+  //   src: Abcity,
+  // },
 ];

@@ -1,15 +1,16 @@
 import React from "react";
 import IconMagnecticWrapper from "../IconMagneticWrapper";
-const text= "I'm"
+import Link from "next/link";
+const text = "I'm";
 const AboutMeText = () => {
-  const text2 = "Let's"
+  const text2 = "Let's";
   return (
     <div className="flex flex-col items-center justify-center gap-3 lg:items-start lg:justify-start w-full lg:w-[30%] py-2 lg:py-4">
       <p className="text-secondary text-base lg:text-lg  text-center lg:text-left   ">
-        Hey 👋 My name is Roshdy and {text} a self-taught Front-end developer with
-        1 year of experience in all recent front-end development technologies
-        such as: HTML CSS Javascript Typescript And frameworks like: React NEXT
-        js Tailwind CSS
+        Hey 👋 My name is Roshdy and {text} a self-taught Front-end developer
+        with 1 year of experience in all recent front-end development
+        technologies such as: HTML CSS Javascript Typescript And frameworks
+        like: React NEXT js Tailwind CSS
         <br />
         <br />
         {text} a dedicated and hardworking person that will not only develop and
@@ -19,8 +20,7 @@ const AboutMeText = () => {
         sessions/ appointments.
         <br />
         <br />
-        I built real-world projects such as:  Netflix clone , Spotify
-        clone
+        I built real-world projects such as: Netflix clone , Spotify clone
         <br />
         {text} currently digging into backend development to build a powerful AI
         SaaS platform. If you are looking to build your own website in a modern
@@ -28,9 +28,12 @@ const AboutMeText = () => {
         with me using the calendar
       </p>
       <IconMagnecticWrapper>
-      <p className="px-4 cursor-pointer py-2 w-fit text-white transition-all font-bold rounded-none duration-300 ease-in-out hover:shadow-none shadow-[4px_4px_white] bg-[#1BCF90] ">
-        {text2} Work Together
-      </p>
+        <Link
+          href={"#contact"}
+          className="px-4 py-2 text-white font-bold transition-all rounded-none duration-300 ease-in-out hover:shadow-none shadow-[4px_4px_white] bg-destructive "
+        >
+          {text2} Work Together
+        </Link>
       </IconMagnecticWrapper>
     </div>
   );

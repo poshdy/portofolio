@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 const Pattern = () => {
   return (
     <svg
-    className="absolute -z-10 lg:bottom-2 -bottom-8 w-[400px] lg:w-full "
+    className="absolute -z-10 -bottom-5 w-[400px] lg:w-full "
       width="801"
       height="164"
       viewBox="0 0 801 164"
